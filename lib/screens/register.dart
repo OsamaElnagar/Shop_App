@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/register_cubit/cubit.dart';
 import 'package:shop_app/register_cubit/states.dart';
 import 'package:shop_app/shared/styles/colors.dart';
-import 'package:shop_app/shared/network/local/components.dart';
+import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/homeLayout/home_layout.dart';
 import 'package:shop_app/shared/network/remote/cache_helper.dart';
 // ignore: must_be_immutable

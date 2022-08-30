@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/models/search_model.dart';
 import 'package:shop_app/search_cubit/states.dart';
-import 'package:shop_app/shared/network/local/components.dart';
+import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/shared/network/local/dio_helper.dart';
 
 import '../shared/network/end_points.dart';

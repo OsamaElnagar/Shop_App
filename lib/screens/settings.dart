@@ -6,7 +6,7 @@ import 'package:shop_app/shared/cubit/states.dart';
 
 import '../login_cubit/cubit.dart';
 import '../login_cubit/states.dart';
-import '../shared/network/local/components.dart';
+import '../shared/components/components.dart';
 
 class Settings extends StatelessWidget {
   Settings({Key? key}) : super(key: key);

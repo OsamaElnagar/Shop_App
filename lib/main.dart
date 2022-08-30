@@ -6,7 +6,7 @@ import 'package:shop_app/homeLayout/home_layout.dart';
 import 'package:shop_app/screens/login.dart';
 import 'package:shop_app/shared/cubit/cubit.dart';
 import 'package:shop_app/shared/cubit/states.dart';
-import 'package:shop_app/shared/network/local/components.dart';
+import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/shared/network/remote/cache_helper.dart';
 import 'package:shop_app/shared/network/local/dio_helper.dart';
 import 'package:shop_app/shared/network/local/blocObserver.dart';

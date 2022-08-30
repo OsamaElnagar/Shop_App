@@ -4,7 +4,7 @@ import 'package:shop_app/screens/search.dart';
 import 'package:shop_app/shared/cubit/cubit.dart';
 import 'package:shop_app/shared/cubit/states.dart';
 
-import '../shared/network/local/components.dart';
+import '../shared/components/components.dart';
 
 
 

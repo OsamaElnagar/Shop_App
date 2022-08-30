@@ -6,7 +6,7 @@ import 'package:shop_app/models/home_model.dart';
 import 'package:shop_app/shared/cubit/cubit.dart';
 import 'package:shop_app/shared/cubit/states.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:shop_app/shared/network/local/components.dart';
+import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/shared/styles/colors.dart';
 
 class Products extends StatelessWidget {

@@ -3,10 +3,10 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shop_app/models/favorites_model.dart';
 import 'package:shop_app/on_boarding/on_boarding.dart';
 
-import '../../../screens/login.dart';
-import '../../cubit/cubit.dart';
-import '../../styles/colors.dart';
-import '../remote/cache_helper.dart';
+import '../../screens/login.dart';
+import '../cubit/cubit.dart';
+import '../styles/colors.dart';
+import '../network/remote/cache_helper.dart';
 void navigateTo(context, widget) => Navigator.push(
       context,
       MaterialPageRoute(

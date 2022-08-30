@@ -8,7 +8,7 @@ import 'package:shop_app/screens/favorites.dart';
 import 'package:shop_app/screens/products.dart';
 import 'package:shop_app/screens/settings.dart';
 import 'package:shop_app/shared/cubit/states.dart';
-import 'package:shop_app/shared/network/local/components.dart';
+import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/shared/network/end_points.dart';
 
 import '../../models/changeFavorites_model.dart';
