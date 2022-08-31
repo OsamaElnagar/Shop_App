@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shop_app/search_cubit/cubit.dart';
 import 'package:shop_app/search_cubit/states.dart';
 import '../models/search_model.dart';
-import '../shared/cubit/cubit.dart';
+import '../search_cubit/cubit.dart';
+import '../shared/bloc/app_cubit//cubit.dart';
 import '../shared/styles/colors.dart';
 
 class Search extends StatelessWidget {

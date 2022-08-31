@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/screens/search.dart';
-import 'package:shop_app/shared/cubit/cubit.dart';
-import 'package:shop_app/shared/cubit/states.dart';
-
+import 'package:shop_app/shared/bloc/app_cubit/cubit.dart';
+import 'package:shop_app/shared/bloc/app_cubit/states.dart';
 import '../shared/components/components.dart';
 
 
@@ -20,7 +19,7 @@ class ShopLayout extends StatelessWidget {
         return Scaffold(
           appBar: AppBar(
             centerTitle: true,
-            elevation: 10.0,
+            elevation: 5.0,
             title: Text(
               'salla'.toUpperCase(),
               style: const TextStyle(

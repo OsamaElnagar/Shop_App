@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/models/categories_model.dart';
 import 'package:shop_app/models/home_model.dart';
-import 'package:shop_app/shared/cubit/cubit.dart';
-import 'package:shop_app/shared/cubit/states.dart';
+import 'package:shop_app/shared/bloc/app_cubit/cubit.dart';
+import 'package:shop_app/shared/bloc/app_cubit/states.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/shared/styles/colors.dart';
@@ -43,14 +43,14 @@ class Products extends StatelessWidget {
           children: [
             CarouselSlider(
               items: homeModel.data.banners
-                  .map(
-                    (e) => Image(
-                      image: NetworkImage(e.image),
+                  .map((element) {
+                      return Image(
+                      image: NetworkImage(element.image),
                       width: double.infinity,
                       fit: BoxFit.cover,
-                    ),
-                  )
-                  .toList(),
+                    );
+                    },
+                  ).toList(),
               options: CarouselOptions(
                 height: 250,
                 initialPage: 0,

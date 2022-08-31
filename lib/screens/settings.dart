@@ -1,8 +1,9 @@
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shop_app/shared/cubit/cubit.dart';
-import 'package:shop_app/shared/cubit/states.dart';
+import 'package:shop_app/shared/bloc/app_cubit/cubit.dart';
+import 'package:shop_app/shared/bloc/app_cubit/states.dart';
+
 
 import '../login_cubit/cubit.dart';
 import '../login_cubit/states.dart';

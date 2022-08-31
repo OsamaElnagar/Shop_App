@@ -2,8 +2,8 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/models/favorites_model.dart';
-import '../shared/cubit/cubit.dart';
-import '../shared/cubit/states.dart';
+import 'package:shop_app/shared/bloc/app_cubit/cubit.dart';
+import 'package:shop_app/shared/bloc/app_cubit/states.dart';
 import '../shared/styles/colors.dart';
 
 class FavoritesScreen extends StatelessWidget {

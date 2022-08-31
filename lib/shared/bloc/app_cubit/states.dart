@@ -1,6 +1,6 @@
 import 'package:shop_app/models/login_model.dart';
 
-import '../../models/changeFavorites_model.dart';
+import '../../../models/changeFavorites_model.dart';
 
 abstract class AppStates {}
 

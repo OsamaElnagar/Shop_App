@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/models/categories_model.dart';
-import 'package:shop_app/shared/cubit/cubit.dart';
-import 'package:shop_app/shared/cubit/states.dart';
+import 'package:shop_app/shared/bloc/app_cubit/cubit.dart';
+import 'package:shop_app/shared/bloc/app_cubit/states.dart';
 
 class Categories extends StatelessWidget {
   const Categories({Key? key}) : super(key: key);

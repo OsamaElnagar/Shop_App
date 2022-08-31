@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/models/categories_model.dart';
+import 'package:shop_app/models/changeFavorites_model.dart';
+import 'package:shop_app/models/favorites_model.dart';
 import 'package:shop_app/models/home_model.dart';
 import 'package:shop_app/models/login_model.dart';
 import 'package:shop_app/screens/categories.dart';
 import 'package:shop_app/screens/favorites.dart';
 import 'package:shop_app/screens/products.dart';
 import 'package:shop_app/screens/settings.dart';
-import 'package:shop_app/shared/cubit/states.dart';
+import 'package:shop_app/shared/bloc/app_cubit/states.dart';
 import 'package:shop_app/shared/components/components.dart';
 import 'package:shop_app/shared/network/end_points.dart';
+import 'package:shop_app/shared/network/local/dio_helper.dart';
 
-import '../../models/changeFavorites_model.dart';
-import '../../models/favorites_model.dart';
-import '../network/local/dio_helper.dart';
+
+
 
 class AppCubit extends Cubit<AppStates> {
   AppCubit() : super(AppInitStates());
@@ -49,8 +51,6 @@ class AppCubit extends Cubit<AppStates> {
     emit(AppLoadingHomeDataStates());
     DioHelper.getData(url: home, token: token).then((value) {
       homeModel = HomeModel.fromJson(value.data);
-      // printFulltext(homeModel!.data.banners[0].image);
-      // debugPrint(homeModel!.status.toString());
       for (var element in homeModel!.data.products) {
         favorites.addAll({
           element.id: element.inFavorites,
