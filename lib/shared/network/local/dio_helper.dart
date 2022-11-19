@@ -8,7 +8,9 @@ class DioHelper {
       BaseOptions(
         baseUrl: 'https://student.valuxapps.com/api/',
         receiveDataWhenStatusError: true,
+
       ),
+
     );
   }
 
@@ -49,7 +51,7 @@ class DioHelper {
   }
 
 
-  static Future<Response> putData({
+  static Future<Response> putData({ // dio.put method is something like update data.
     required String path,
     Map<String, dynamic>? query,
     String? lang = 'en',
